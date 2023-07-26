@@ -1,0 +1,68 @@
+
+
+clc;
+close all;
+clear all;
+t1=input(' lower limit');
+t2=input(' higher  limit');
+t=t1+t2;
+x=t>=0;
+plot(t,x);
+xlabel ('time');
+ylabel ('amplitude');
+title('unit step ct signal');
+
+#2
+
+clc;
+clear all;
+close all;
+nl=input("lower limit");
+n2=input(higher limit');
+n=n1:n2;
+x=n>=0;
+stem(n,x);
+xlabel('number of samples"); 
+ylabel('amplitude"); 
+title('impules CT signal');
+
+
+#3
+
+clc:
+clear all; 
+close all;
+t1=input('enter lower limit'); 
+t2=input('enter higher limit');
+t=t1:t2;
+a=input('enter the value of a');
+y=exp(a*t); 
+subplot(2,1,1);
+plot(t,y,'r');
+xlabel('time'); 
+ylabel('amplitude'); 
+title('continous ramp signal');
+
+
+#4
+
+clc;
+clear all;
+close all;
+t1=input('enter lower limit');
+t2=input('enter higher limit');
+t=t1:t2;
+a=input('enter the value of a'); 
+y=exp(a*t);
+subplot(2,1,1); 
+plot(t.y.'r');
+xlabel('time');
+ylabel('amplitude"); 
+title('Continous');
+subplot(2,1,2); 
+stem(t,y,"b");
+xlabel('number of samples'); 
+ylabel('amplitude"); 
+title('discrete');
+
+

@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+fm-0.1
+t=10:0.1:10;
+a= 5*sin(2*pi*fim*t) 
+plot(t,a);
+xlabel(time');
+ylabel('amplitude'); 
+title('sinosidal ct signal');

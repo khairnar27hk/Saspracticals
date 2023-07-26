@@ -1,0 +1,64 @@
+#1
+
+clc;
+clear all;
+close all;
+n1=input('lower limit'); 
+n2=input('upper limit');
+n=n1:n2;
+x=n>=0;
+stem(n,x);
+xlabel('no of sample'); 
+ylabel('amplitude'); 
+title('unit step DT signal');
+
+#2
+
+clc;
+clear all; 
+close all;
+n1=input('lower limit'); 
+n2-input('higher limit');
+n=n1:n2;
+x=n>=0;
+stem(n,x);
+xlabel('number of samples'); 
+ylabel('amplitude'); 
+title('impulse DT signal');
+
+#3
+
+clc;
+clear all;
+close all;
+n1=input('enter lower limit'); 
+n2=input('enter higher limit'); 
+n=n1:n2;
+a=input('enter the value of a'); 
+y=exp(a*t); title('DT ramp signal');
+subplot(2,1,1);
+stem(n,y,'r');
+xlabel('no of samples'); 
+ylabel('amplitude');
+
+
+#4
+
+clc;
+clear all;
+close all;
+t1=input('enter lower limit'); 
+t2=input('enter higher limit'); 
+t=t1:12;
+a=input('enter the value of a'); 
+y=exp(a*t); 
+subplot(2,1,1); 
+plot(t,y,'r'); 
+xlabel('time'); 
+ylabel('amplitude'); 
+title('continuous');
+subplot(2,1,2); 
+stem(t,y,'b');
+xlabel('number of samples');
+ylabel('amplitude');
+title('discrete');

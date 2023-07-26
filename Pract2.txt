@@ -1,0 +1,13 @@
+#1
+
+clc;
+clear all;
+close all;
+fm=0.1
+n=-10:0.1:10;
+a= 5*sin(2*pi*fm*n) stem (n,a);
+xlabel('no of sample'); ylabel('amplitude');
+title('sinosidal dt signal');
+
+
+
